@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Gastronómico de Vanguardia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Festival Gastronómico de Vanguardia</h1>
+            <nav class="nav">
+                <a href="#about">Sobre el festival</a>
+                <a href="#program">Programa</a>
+                <a href="#tickets">Entradas</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h2>Sabores que inspiran innovación</h2>
+                    <p>Únete a chefs, productores y amantes de la gastronomía en un evento de degustaciones, talleres y experiencias inmersivas.</p>
+                    <a class="btn" href="#tickets">Comprar entradas</a>
+                </div>
+                <div class="hero-img" aria-hidden="true"></div>
+            </div>
+        </section>
+
+        <section id="about" class="container section">
+            <h3>Sobre el festival</h3>
+            <p>El Festival Gastronómico de Vanguardia celebra la creatividad culinaria, la sostenibilidad y la investigación en sabores. Actividades para todas las edades.</p>
+        </section>
+
+        <section id="program" class="container section">
+            <h3>Programa destacado</h3>
+            <ul class="program-list">
+                <li><strong>Talleres:</strong> Técnicas modernas de cocina.</li>
+                <li><strong>Degustaciones:</strong> Menús de 5 tiempos por chefs invitados.</li>
+                <li><strong>Charlas:</strong> Innovación y sostenibilidad en alimentos.</li>
+            </ul>
+        </section>
+
+        <section id="tickets" class="container section">
+            <h3>Entradas</h3>
+            <p>Compra tu entrada anticipada y asegura tu plaza en las actividades que más te interesen.</p>
+
+            <form id="signup-form" class="signup-form">
+                <label for="name">Nombre completo</label>
+                <input id="name" name="name" type="text" required placeholder="Ej. María Pérez" aria-describedby="name-help">
+
+                <label for="email">Correo electrónico</label>
+                <input id="email" name="email" type="email" required placeholder="ejemplo@dominio.com" aria-describedby="email-help">
+
+                <label for="tickets-count">Cantidad de entradas</label>
+                <select id="tickets-count" name="tickets-count" required>
+                    <option value=""> Selecciona...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+                <button class="btn" type="submit">Reservar</button>
+            </form>
+        </section>
+
+        <section id="contact" class="container section contact">
+            <h3>Contacto</h3>
+            <p>¿Preguntas? Escríbenos a <a href="mailto:info@festivalgastronomico.example">info@festivalgastronomico.example</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Festival Gastronómico de Vanguardia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
